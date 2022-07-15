@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Its a technique of handling event in the webpage in a better way  -->
+    <!-- Event Delegation is based on Event bubbling -->
+
+    <!-- It says attaching the EventHandler individually or on the child elements
+         You should attach the eventHandlers directly to the parent element 
+         It will reduce the headover of using too many eventHandlers 
+         also it will improve the performance of the webapage as well 
+    -->
+
+    <!-- Event delegation saves the memeory because less usage of eventhandlers -->
+
+    <!-- Second benefit of event delegation is writing less code  -->
+
+
+    <!-- Limitations of Event Listeners  -->
+    <!-- 
+    
+        All the events don't bubbled up like : blur, focus, resizing of the window 
+
+        You can also check the same in the Event Listener by e.bubbles and store
+        it in the variable  
+
+     -->
+
+    <!-- <div>
+        <ul id="category">
+            <li id="laptops">Laptops</li>
+            <li id="cameras">Cameras</li>
+            <li id="shoes">Shoes or Joota</li>
+        </ul>
+    </div> -->
+
+
+
+    <!-- Another good use case of the Event Delegation !!!!!!!!!!!!!! -->
+
+
+    <div>
+    
+        <input type="text" id="name" data-uppercase>
+        <input type="text" id="pan" >
+        <input type="text" id="mobile">
+
+    </div>
+
+    <script src="/EventDelegation.js"></script>
+</body>
+</html>
