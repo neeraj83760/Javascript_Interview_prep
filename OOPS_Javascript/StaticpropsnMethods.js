@@ -66,8 +66,6 @@
 
 //**************************Lets see static properties and methods kaise use hote hai Configuration me****
 
-
-
 class Config {
 
 static dbUser = 'username';
@@ -75,7 +73,10 @@ static dbPassword = 'secret';
 static apiToken = 'abcd';
 
 // Hum aise static block bhi bana sakete hai but ye ek hi baar run hota hai wo bhi by using one
-// static method ke through jo ussi class me bana ho 
+// static method ke through jo ussi class me bana ho
+
+// MATH.random()   .... random is also a static method .. yaha pe humien math class ka object 
+// banane ki jarurat nahi hai ...Object.hasOwnProperty()... hasOwnProperty bhi static method hai  
 static{
 
     console.log('Hello! Its Initialized!!')
