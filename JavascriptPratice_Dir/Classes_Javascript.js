@@ -1,8 +1,12 @@
 class myfunction{
 
-    constructor(name, age){
+    #fees= 0;
+
+    constructor(name, age, fees){
     this.name = name;
     this.age = age;
+
+    this.#fees = fees;
     }
 
     #StudentData(){
@@ -17,6 +21,9 @@ class myfunction{
         this.#StudentData();
         console.log('Black pants and white shirt!!')
     }
+
+
+
 }
 
 const obj = new myfunction('Saanu', 23);
@@ -37,3 +44,10 @@ obj.StudentHobby()
 obj1.StudentDress();
 
 
+const obj2 = new myfunction('Sanju', 23, 1000);
+
+obj2.name = 'Raju'
+obj2.age = 34
+obj2.fees = 10000
+
+console.log(obj2)
