@@ -51,3 +51,4 @@ obj2.age = 34
 obj2.fees = 10000
 
 console.log(obj2)
+
