@@ -1,7 +1,7 @@
 // Minimum lines of code which is required to get the data in your browser console 
 // Ye ajax asyncronous call hai jo hum server pe send karte hai 
 
-//************VVVVIMP :  Bhai array of objects ke liye always use ForEach loop *****************/
+//************VVVVIMP : Bhai array of objects ke liye always use ForEach loop *****************/
 
 const url = 'https://jsonplaceholder.typicode.com/users/'
 
@@ -32,9 +32,9 @@ xhr.onload = () => {
 
  let table = document.querySelector('#myTable');
 
-    Object.values(data).forEach((empID, Index)=> {
+    Object.values(data).forEach((empID)=> {
       
-        console.log(empID.email)
+        console.log(empID.id, empID.name, empID.email);
 
         let row = `<tr>
     
@@ -53,15 +53,6 @@ xhr.onload = () => {
 }
 
 xhr.send();
-
-
-
-
-
-
-
-
-
 
 
 //********************** Minimum lines of code which is required to post the data to the server ***********
